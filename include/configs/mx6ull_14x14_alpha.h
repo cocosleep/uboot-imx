@@ -154,24 +154,16 @@
 		"fi;\0" \
 		"findfdt="\
 			"if test $fdt_file = undefined; then " \
-				"if test $board_name = ULZ-EVK && test $board_rev = 14X14; then " \
-					"setenv fdt_file imx6ulz-14x14-evk.dtb; fi; " \
-				"if test $board_name = EVK && test $board_rev = 9X9; then " \
-					"setenv fdt_file imx6ull-9x9-evk.dtb; fi; " \
-				"if test $board_name = EVK && test $board_rev = 14X14; then " \
-					"setenv fdt_file imx6ull-14x14-evk.dtb; fi; " \
+				"if test $board_name = ALPHA && test $board_rev = 14X14; then " \
+					"setenv fdt_file imx6ull-14x14-alpha-emmc.dtb; fi; " \
 				"if test $fdt_file = undefined; then " \
 					"echo WARNING: Could not determine dtb to use; " \
 				"fi; " \
 			"fi;\0" \
 		"findtee="\
 			"if test $tee_file = undefined; then " \
-				"if test $board_name = ULZ-EVK && test $board_rev = 14X14; then " \
-					"setenv tee_file uTee-6ulzevk; fi; " \
-				"if test $board_name = EVK && test $board_rev = 9X9; then " \
-					"setenv tee_file uTee-6ullevk; fi; " \
-				"if test $board_name = EVK && test $board_rev = 14X14; then " \
-					"setenv tee_file uTee-6ullevk; fi; " \
+				"if test $board_name = ALPHA && test $board_rev = 14X14; then " \
+					"setenv tee_file uTee-6ullalpha; fi; " \
 				"if test $tee_file = undefined; then " \
 					"echo WARNING: Could not determine tee to use; " \
 				"fi; " \
