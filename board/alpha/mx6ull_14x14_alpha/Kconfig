@@ -1,0 +1,17 @@
+if TARGET_MX6ULL_14X14_ALPHA
+
+config SYS_BOARD
+	default "mx6ull_14x14_alpha"
+
+config SYS_VENDOR
+	default "alpha"
+
+config SYS_CONFIG_NAME
+	default "mx6ull_14x14_alpha"
+
+config IMX_CONFIG
+	default "board/alpha/mx6ull_14x14_alpha/imximage.cfg"
+
+config TEXT_BASE
+	default 0x87800000
+endif

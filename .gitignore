@@ -37,6 +37,9 @@
 # Build tree
 /build*
 
+generated_defconfig
+ncscope.out
+
 #
 # Top-level generic files
 #
